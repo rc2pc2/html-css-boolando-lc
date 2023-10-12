@@ -4,3 +4,102 @@
     box-sizing: border-box;
 }
 
+header{
+    height: 60px;
+    background-color: #fe6900;
+}
+
+footer{
+    height: 100px;
+    background-color: #1a1a1a;
+}
+
+.font-white{
+    color: white;
+}
+
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.flex-between-centered{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav,
+footer section{
+    height: 100%;
+}
+
+main > section.row{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+main article.product{
+    width: calc(100% / 3);
+    padding: .5rem;
+    /* height: 500px; */
+}
+
+div.product-image{
+    position: relative;
+    /* height: 100%; */
+}
+
+.product-image img{
+    width: 100%;
+}
+
+.product-image img.hover-image{
+    display: none;
+}
+
+article.product:hover  img.static-image{
+    display: none;
+}
+
+article.product:hover  img.hover-image{
+    display: inline-block;
+}
+
+div.product-discount{
+    position: absolute;
+    bottom: 2.65rem;
+    left: 0;
+}
+
+span.tag{
+    font-size: .8rem;
+    padding: .3rem .65rem;
+    background-color: yellow;
+    color: white;
+    font-weight: bold;
+
+}
+span.tag.tag-discount{
+    background-color: red;
+}
+
+span.tag.tag-sustainability{
+    background-color: green;
+}
+
+div.product-like{
+    position: absolute;
+    top: .66rem;
+    right: 0;
+    background-color: white;
+    font-size: 1.8rem;
+    padding: .25rem .66rem;
+}
+
+article.product:hover  span{
+    color: red;
+}
